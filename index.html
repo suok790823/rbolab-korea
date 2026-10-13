@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(주)르포랩 | 공간디자인</title>
+<meta name="description" content="건설의 정보를 데이터로 연결하고 공간의 미래를 기술로 구현합니다">
+<style>
+:root{--ink:#111;--bg:#fff;--soft:#f3f3f3;--line:#ddd;--mute:#666}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:700;font-size:18px;letter-spacing:.5px}
+nav{display:flex;gap:22px;font-size:15px}
+nav a:hover{text-decoration:underline}
+.hero{background:var(--ink);color:#fff;padding:96px 0 88px}
+.hero small{letter-spacing:3px;color:#aaa;font-size:13px}
+.hero h1{font-size:clamp(28px,6vw,52px);line-height:1.3;margin:16px 0 28px;font-weight:700;word-break:keep-all}
+.btn{display:inline-block;background:#fff;color:var(--ink);padding:14px 28px;font-weight:700;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.btn.dark{background:var(--ink);color:#fff}
+.ph{background:#d9d9d9;color:#888;display:flex;align-items:center;justify-content:center;font-size:14px}
+.hero .ph{height:240px;margin-top:48px}
+section{padding:72px 0}
+section.alt{background:var(--soft)}
+h2{font-size:clamp(22px,4vw,32px);margin-bottom:8px;word-break:keep-all}
+.sub{color:var(--mute);margin-bottom:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);padding:28px}
+.card b{display:block;font-size:13px;color:var(--mute);margin-bottom:8px}
+.card h3{font-size:19px;margin-bottom:8px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal .ph{aspect-ratio:4/3}
+form{max-width:560px}
+label{display:block;font-weight:700;margin:16px 0 6px;font-size:15px}
+input,textarea{width:100%;padding:12px;border:1px solid #bbb;font:inherit;background:#fff;border-radius:0}
+textarea{min-height:130px;resize:vertical}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+#msg{margin-top:14px;font-weight:700}
+footer{background:var(--ink);color:#ccc;padding:40px 0;font-size:14px}
+footer b{color:#fff}
+.fab{position:fixed;right:16px;bottom:16px;background:var(--ink);color:#fff;padding:14px 20px;font-weight:700;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.3);z-index:20}
+@media(max-width:720px){.grid3,.gal{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}nav{gap:14px;font-size:14px}section{padding:52px 0}.hero{padding:64px 0}}
+@media(max-width:420px){.gal{grid-template-columns:1fr}nav a:nth-child(3){display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">(주)르포랩</a>
+<nav><a href="#work">하는 일</a><a href="#project">프로젝트</a><a href="#contact">상담 신청</a></nav></div></header>
+
+<div id="top" class="hero"><div class="wrap">
+<small>RBO LAB · 공간디자인</small>
+<h1>건설의 정보를 데이터로 연결하고<br>공간의 미래를 기술로 구현합니다</h1>
+<a class="btn" href="#contact">상담 신청</a>
+<div class="ph">사진 자리</div>
+</div></div>
+
+<section id="work"><div class="wrap">
+<h2>하는 일</h2><p class="sub">대표 이수옥 · 공간디자인</p>
+<div class="grid3">
+<div class="card"><b>01</b><h3>건설 정보 연결</h3><p>(입력 필요)</p></div>
+<div class="card"><b>02</b><h3>데이터 활용</h3><p>(입력 필요)</p></div>
+<div class="card"><b>03</b><h3>공간 구현</h3><p>(입력 필요)</p></div>
+</div></div></section>
+
+<section id="project" class="alt"><div class="wrap">
+<h2>프로젝트</h2><p class="sub">(입력 필요)</p>
+<div class="gal"><div class="ph">사진 자리</div><div class="ph">사진 자리</div><div class="ph">사진 자리</div><div class="ph">사진 자리</div><div class="ph">사진 자리</div><div class="ph">사진 자리</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>상담 신청</h2><p class="sub">남겨 주시면 확인 후 연락드립니다.</p>
+<form id="f" novalidate>
+<label for="name">이름</label><input id="name" name="name" maxlength="50" required>
+<label for="phone">연락처</label><input id="phone" name="phone" maxlength="30" required placeholder="010-0000-0000">
+<label for="message">문의 내용</label><textarea id="message" name="message" maxlength="1000" required></textarea>
+<div class="hp"><label>비워 두세요<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<p style="margin-top:12px"><button class="btn dark" type="submit" id="send">보내기</button></p>
+<p id="msg" role="status"></p>
+</form>
+</div></section>
+
+<footer><div class="wrap">
+<p><b>(주)르포랩</b> · 대표 이수옥</p>
+<p>전화 <a href="tel:01092651823">010-9265-1823</a> · 이메일 yy7900y@gmail.com</p>
+<p style="margin-top:8px;color:#888">© (주)르포랩</p>
+</div></footer>
+
+<a class="fab" href="#contact">상담</a>
+
+<script>
+var ENDPOINT="https://script.google.com/macros/s/AKfycbz1B_rdKyNhik3768CEshd8zvCUVLM4VbY0j7bBRvqTaOZ2ykZa7VDxOoPNDT2DnDqUCQ/exec";
+var f=document.getElementById("f"),msg=document.getElementById("msg"),btn=document.getElementById("send");
+f.addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=f.name.value.trim(),p=f.phone.value.trim(),m=f.message.value.trim();
+  if(!n||!p||!m){msg.textContent="이름, 연락처, 문의 내용을 모두 적어 주세요.";return}
+  if(ENDPOINT.indexOf("http")!==0){msg.textContent="아직 연결되지 않았습니다.";return}
+  btn.disabled=true;msg.textContent="보내는 중…";
+  var body=new URLSearchParams({name:n,phone:p,message:m,website:f.website.value});
+  fetch(ENDPOINT,{method:"POST",mode:"no-cors",body:body})
+    .then(function(){msg.textContent="접수되었습니다. 감사합니다.";f.reset();btn.disabled=false})
+    .catch(function(){msg.textContent="전송에 실패했습니다. 전화로 문의해 주세요.";btn.disabled=false});
+});
+</script>
+</body>
+</html>
